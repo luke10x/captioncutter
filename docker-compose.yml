@@ -1,0 +1,54 @@
+version: '3.0'
+
+services:
+  localstack:
+    image: localstack/localstack:latest
+    environment:
+      - SERVICES=sqs,sns
+      - AWS_DEFAULT_REGION=eu-central-1
+      - EDGE_PORT=4566
+    ports:
+      - '4566-4597:4566-4597'
+    volumes:
+      - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  aws-cli:
+    image: amazon/aws-cli:latest
+    entrypoint: "/bin/bash -c"
+    stdin_open: true # equivalent of -i
+    tty: true        # equivalent of -t
+    volumes:
+      - "./aws-cli/:/aws"
+    command:
+      - |
+        # aws help
+        aws configure set aws_access_key_id "dummy" --profile test-profile
+        aws configure set aws_secret_access_key "dummy" --profile test-profile
+        aws configure set region "eu-central-1" --profile test-profile
+        aws configure set output "table" --profile test-profile
+        
+        echo '📌 creating SNS topic on localstack'
+        aws --endpoint-url=http://localstack:4566 \
+          sns create-topic --name order-creation-events \
+            --region eu-central-1 \
+            --profile test-profile \
+            --output table | cat
+        
+        echo '📌 creating SQS queue on localstack'
+        aws --endpoint-url=http://localstack:4566 \
+          sqs create-queue --queue-name dummy-queue \
+            --profile test-profile \
+            --region eu-central-1 \
+            --output table | cat
+
+        echo '📌 subscribe SQS queue to the topic on localstack'
+        aws --endpoint-url=http://localstack:4566 \
+          sns subscribe \
+            --topic-arn arn:aws:sns:eu-central-1:000000000000:order-creation-events \
+            --profile test-profile \
+            --protocol sqs \
+            --notification-endpoint http://localstack:4566/000000000000/dummy-queue \
+            --output table | cat
+        echo '⚠️ You are in aws-cli container, use aws-cli or exit!'
+        bash
