@@ -1,11 +1,11 @@
 package dev.luke10x.captioncutter.speech2text.consumer;
 
-//import com.authga.springcloudaws.model.Event;
 import dev.luke10x.captioncutter.speech2text.caption.TranscriberDemo;
-import io.awspring.cloud.messaging.config.annotation.NotificationMessage;
-import io.awspring.cloud.messaging.listener.SqsMessageDeletionPolicy;
-import io.awspring.cloud.messaging.listener.annotation.SqsListener;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.aws.messaging.config.annotation.NotificationMessage;
+import org.springframework.cloud.aws.messaging.listener.SqsMessageDeletionPolicy;
+import org.springframework.cloud.aws.messaging.listener.annotation.SqsListener;
 import org.springframework.stereotype.Controller;
 
 //import static com.authga.springcloudaws.config.AWSConfigConstants.ORDER_QUEUE;
@@ -15,13 +15,15 @@ import org.springframework.stereotype.Controller;
 public class SimpleMessageConsumer {
     private static final String ORDER_QUEUE = "dummy-queue";
 
+    @Autowired
+    TranscriberDemo transcriber;
 //    @Override
     @SqsListener(value = ORDER_QUEUE, deletionPolicy = SqsMessageDeletionPolicy.ON_SUCCESS)
     public void consume(@NotificationMessage String event) {
         if (event != null) {
             log.info("Received order event for consumer 10: " + event);
             try {
-                TranscriberDemo.go();
+                transcriber.go();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

@@ -4,8 +4,8 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.amazonaws.services.sqs.AmazonSQSAsyncClientBuilder;
-import io.awspring.cloud.messaging.config.QueueMessageHandlerFactory;
-import io.awspring.cloud.messaging.support.NotificationMessageArgumentResolver;
+import org.springframework.cloud.aws.messaging.config.QueueMessageHandlerFactory;
+import org.springframework.cloud.aws.messaging.support.NotificationMessageArgumentResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -21,7 +21,7 @@ public class SqsConfig {
     private static final String ACCESS_KEY = "dummy";
     private static final String SECRET_KEY = "dummy";
     private static final String ENDPOINT = "http://localhost:4566";
-    private static final String REGION = "eu-central-1";
+    private static final String REGION = "us-east-1";
 
     @Bean
     public AwsClientBuilder.EndpointConfiguration endpointConfiguration() {
