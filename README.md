@@ -19,3 +19,8 @@ And then run the speech2text with:
 
     AWS_ACCESS_KEY=dummy AWS_SECRET_KEY=dummy mvn spring-boot:run
 
+## Credits
+
+Web resources used while building this app:
+
+https://cmusphinx.github.io/wiki/tutorialsphinx4/
