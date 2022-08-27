@@ -13,6 +13,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
+import static java.text.MessageFormat.format;
+
 @Component
 public class TranscriberDemo {
     @Autowired
@@ -20,24 +22,19 @@ public class TranscriberDemo {
 
     public void go() throws Exception {
 
-        Configuration configuration = new Configuration();
-
-        configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
-        configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
-        configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
-
-        StreamSpeechRecognizer recognizer = new StreamSpeechRecognizer(configuration);
-//        InputStream stream = new FileInputStream(
-//                ResourceUtils.getFile("classpath:monorepo5.wav")
-//        );
-
+        var recognizer = RecognizerFactory.createStreamSpeechRecognizer();
         String fileName = "test11.wav";
         InputStream stream = service.downloadFile(fileName);
 
         recognizer.startRecognition(stream);
         SpeechResult result;
+
         while ((result = recognizer.getResult()) != null) {
-            System.out.format("😇 Hypo: %s\n", result.getHypothesis());
+
+            var best3 = result.getNbest(3).stream()
+                    .reduce("", (acc, each) -> format("{0} / {1}\n", acc, each));
+            System.out.println("🍀: "+ best3);
+
         }
         recognizer.stopRecognition();
 

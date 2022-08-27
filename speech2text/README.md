@@ -13,8 +13,12 @@ This microservice:
 Audio files should be placed in a location on S3 bucket.
 File format should be Microsoft WAV, (16khz 16bit).
 To convert to this format use:
+    
+    multipass shell
 
-     ffmpeg -i file.mp4 -ar 16000 -ac 1 file.wav
+    ffmpeg -i file.mp4 -acodec pcm_s16le -ac 1 -ar 16000 file.wav
+
+---
 
 The code is copied from:
 
