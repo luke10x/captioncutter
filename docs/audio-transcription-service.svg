@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="840"
+   height="560"
+   viewBox="-271 -830 840 560"
+   version="1.1"
+   id="svg165"
+   sodipodi:docname="audio-transcription-service.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview167"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.95169365"
+     inkscape:cx="428.18401"
+     inkscape:cy="245.87744"
+     inkscape:window-width="1512"
+     inkscape:window-height="916"
+     inkscape:window-x="0"
+     inkscape:window-y="94"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg165" />
+  <defs
+     id="defs5">
+    <pattern
+       id="poweredby_logo"
+       patternUnits="objectBoundingBox"
+       patternContentUnits="objectBoundingBox"
+       preserveAspectRatio="none"
+       width="1"
+       height="1">
+      <image
+         x="0"
+         y="0"
+         preserveAspectRatio="none"
+         width="1"
+         height="1"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAyCAYAAAAZUZThAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABjpSURBVHic7Z15fJTVuce/z8xkhSSASCL7FkiGIOICiLIokIBSXJBr1XrrSm/V9uq1VuvCOKgotdVW6nJxayu1YtyAy5IAEgqiVkHRbKhsAmFVAgGyzjz3j/NOMjOZmWxw8dL5fT75zLzvOc85z/vmfd7znOf8zjOiqkQRRRShYTvZCkQRxQ8ZUQOJIooIiBpIFFFEQNRAoogiAhzHq6Esd26shw5jgSwb3m6KdAW6WcW7BC3zYtsFFNopLyh0Tatpa58ikgA87XeqGtgB/F1Vd7W1/RMBEZkCxKjq20HnJwIdVfXvJ0ezKEJB2hLF6vH0hwlJFRVTUC4HLgGSmyl6GFiC8F5FUtLCHXedX9ma/kWkA3AQuB+oxBj8ecAYYKiq7m5NuycSIvIoEK+qvwo6fz/QXVVvOzmaRREKrTIQyc21Z5Qk3yQqDwNd26hDmYo+XJp5+BWdNs3TIj0aDKSjqpb7nd8I/EFVX7WO04ARwHpV3SEiSUBfVd1olfcAHKq61ToeBGxX1SMi0g0YBuxS1X9a5QlAH6AWc/1rVdUjImcB/ax+tvnpk4Ax2l3A1UQwEOA+YBTwoap+LyKnAV1V9Uu/uoMsfcqJ4oSixXOQTHf+ZGdxSqGozKXtxgHQVVTmOotTCjPd+ZPb2piIOIDOwBYx+BuwGrgc2CgiP8WMNOtEpJ0lNgf4syUfA6wCbCJyObAemAK8LiLzrPr9gEXAQks2UUSeA94CLgXWi8h1VntdgE3Az4G/AD+OoP44YDFwE1AkIllAe+AjEUm22msHrOE4usdRhEezb7K43bZMRs4SuPdELC0qZAgscrqXzy5h3f3qcnlbIH6fiFQBHYGLge+BfwDTMG/unqrqFZHRmAfwLeCfwEUisgw4E/OQJwLnAxuACuBZ4AZVXSYidsxDOxHYCfQFeqvqdhEZjnnwu6lqpfWGXysibwMuIE9Vb4X60S0c4oAxlq5PAI+o6hUisg64EmPEVwEFqnqgBfcnilaiWSNIuntpciYjF4LeG67Omd1SOD0p7jiopPdmMnJhuntpc+cz/igDHgWGqfEdhwCLVdVnbGuBGqA/sADIwbhen2KMYhRmtFgA9MKMkHdZRrQY8zYfZrX1vaput76fD9QB71p1f2/VHQCcA6zw03F5BP2X+em6Ajjb+v4q8BPr+0+xRrsoTjyaHEHS3UuTY7CvBR0cXJYYY2dSVhpXnd2dId1T+Pnrn7G6Yv9xUEsvjcH+Qbp76QVfuyYdbobAE2H88WrMqOJDAtAOOIBxj5ZhRpvlQBLGxZkMzAbsgAczAvi3/R2QigkK+OABtgJ3BvW/DTgKpPidc2CMKRRi/b538uv3HeAZETkHyASWhJGP4jgj4ggibrctBsfrQIBxDOjSnvsnZrDirtE8MmUQ/Tq344tdh6iu82ITITneQe/TEul7ejvax7XaVc6KwfG6uN1tWatZBWSLSHfr+Dpgn6ruUtUtGAP6CcZAlmPezgdUtQzjRm0GLlbVUkz4+F2gd4h+VgNDgVir7mmYh1qB94FpIhJvzSMmRdD3YhHpb82D/g3IB1DVKuBN4AXgdVUNZ2BRHGdEfHozGTkL9FKAWIeNbGcqPxp8Bkeq6vjuaA2Lv9hNu3gHXZLi6JgYy2OXO+mQEEtCjL2+DQUOHavlwNEaDhypZlf5MVZtOsDabw5Q42lqmqGXGh24rzUXp6prLF++RER2YqJOE/2qLASu9kWcRMQLvGfJqohcA/xdRG7AjBJvqeon1uTZv58vROSXmHnHZkCA/1LVahGZjXnrl2JeSEURVC7FzJ0OYozjEb+yVzAT/ZtafieiaC3Chnkz3fmTBRYlxtj5+Zi+XD6kK+3iY3i+YDPXDe9JlzbON747Uk1+yT6WFe/hk20HI9ZV+FGJK/t/WtuXFdlq39qwqIh0Ag5qEzFxEbEBKara6IKs6FN1U29/KxgQp6rHgs6fB/xJVYe3+AKiaDVCGojk5tqdxSmFChkiMP+WEWR1TeYfXx/AeUYSnduHN46qWg97Dlez53AVcQ4bndrFclpiLO3jww9WCzaW8eiSEo7WhF4GESgtdh7Kauk6yakCEXFhomQPqOo7J1uffyWEfGozSpJvUsgAUIW5a7bwzNVnsftQJaPTOwNQWeth/bcH+ezbcnaWV7K/ohpVEIG05HjSkuPxeJWDlTWUV9ZRW+dFUUb27czErFS6+BnZZUO6kpGWzD1vf8E3+4800kchI6Mk+SbgxRNxE/4fYA9wr6ouPNmK/Kuh0QjS4+kPE5IOV3yD3yKgCLx5ywg27avgyrO68dpH37K8dC9Du3fg3N4d6dExkbSUeOIdkefTlbUeCr7az/LivShw25h+pHdpX19eUV3HnW9+zodbvg8lXlaRnNTfn5YiIs9iFuaCoZgI0D5gP/AJ8Iaq7o18O374cLrz/wHSsyUyKvpqyYxs94nS6VRGoxEkqaJiCkEr5L5R5LIhXdlfUc31I3py/YgW/Y8ASIixM2lQGpMGpbHj4DHci0v48bndGZ+RavqOc+Ca7GTqCx+Gcre6WrrN9zt3Oma9oilcB8wSkQdU9Q8tVvyHhe6gzbnmBiidTpAupzwau1iGeNgIKzbt499H9OLN9Tu5fWy/Nnfco2Mic64+i0eXlrJl/zGmj+oDQM+Oidw+pj+/Xb6psZDRbX7jArZiCIs+CNAF6IkxoElAIvC0iLRX1UfbfAEnHboS5KXm1BT0qxOtzamKABcry50b6yVlP2FYudmZqfTqlMgNI3vRMTE2oKyqzsueQ1XsKq9k16FKdh+sYt+RKjxepWO7WDq3i+PcXh0Z3C0Zm0iA7EMLi5g0KI2R/U4DoM6rXPvyxxSWNVojPGzj0Ok+qryIvImhk2xQ1XPCXqRIbwy9xFdnnKq+H/nW/DDhdOdvAfoIzC1yZf/sZOtzqiNgBPHQYaygYSkey0v38tqNw8jdsItuHeKpqvVyqLIWVeiYGEN6anuWl+zlzfU7w3bYq1Mi92QP4OKBXerP3TUunbtyN3J2r47EO2w4bMLNF/ThrtxGtKVka89JfksuUlW3ichlGDpJF+AxDD2kzRARaSr8eypDQNTM+X4Q7bZGLpJMsIuVFaqSD6ow7+PtPHXVEI7W1BHnsOOwBY4GH2+NvKax/ftj/OKNz7lzXDq3Xmjcqk7tYpl8ZldeXbeNn4/uC8DIvqcR57BRXddoMTGLFhqI0V13icjzGOrICBEZoGpcDxHpCzyHiRbdbH2fBmzH8LIeU9Vaq+5A4B5MlC8DSBKRrcDXwCuq+q6vTxG5BUMu3BJqn4e1uHgJUKGq00KU/xi4ATNC3h9c3ho43XmzBYYoUqux9htKfjPuO//ywbNWpnpqPS8JGqMiK4tnZD9pyb0o0MNj1//EY0+ywT2g52dC6iDY4hX+atfYOYWusUcC+1t+ieD9pVdktVdjX7RT8xdgtMAnirxe7JpQ7yamP770dEeN/SGBYZkw2AkVCp/ZRN4rmjHhv0NdTx93QXyC1N6M6vXAgExo54SvBUq9NplT8tCE1W2RCQg72fB2C24sGHnFeyneXUG7WEcj4wBITW56AVGBOas28+n2BmOaOrQrH29tiF4lxTs4r3fjuWVzdIyAv/p9n+D3PRlDXBwDPAxMx3C4zgKm+hnHbcBnGCO6AMPXOgoMxHC43hGROX7t7rTanS4i/pwwH6Zb5VeJSEaI8lut8shvnRZBXlNkDDBZaurmBJSAeGo9rwKTFTnLpnWv+ZWOUiTH7rFPtaGrQP8NqAHZrZAhyiwvNaszH195WkCbQg9FckQZ6qB6HuaF0F7hItARvnpZ7ryJMTX2LwV+AQxXOAIkC0xU1Rcy3flLB7oLOvu3fZG7wJFI9Xuo/gkYjuG8HQIGKUwVr77vnJn/QFtkAgzE2iYbEarw8gdbwpanJcc31QQAdV4v73zWsCvWJkJqcjw7yxsWkHt0TGjcfzN0DAeLf+Xb6htqtDwDM9lfi6F1PA08BSAiA4A/YQiPL2D4aZ1UtROQTgNL9zYR6W99X4X5R9sxRMh6iEhXYJDfqeDyZAy7GCz6y/FAsSu7EBGLuiPXON359UEZpzv/F5iAhiJcX+i6ZE+wvKKPKZR7kfOKXdn9i10TeiveizAkzrOlxhNurWqyIjnAfJBbBf0z2F4CyHKv6OlF3saQQJfasPUqcWWnphKbDHIpsFdgooOaP/o3uI/qW6w2jyr8qDre1qnYld3FhmcQMA+woTyc5V6S1lqZYBerWW/nZcV7uWVPBZlpSY3KmmsgABt2BDI/MtOSKN1zhO4dEgHCrdi3ZQQBszbSHRMiDkYcsBEziQ/eM/9LTHRsC3Cnqlb7ClT1GxF5EDMq2TAU+m8sLlYeMBUzErzl195463MPkIbZx/KsX3kOEAMUq+rXwYoq3Ox05/+0Gdf7bbEre4D/iZIZE57JdOdfAmQDzw91FxRUU9Md+C3mIp8ompEdjpbvtePJKXRNKq5vzzWxIMu9/CYvugC4IsudN6zQlfPPILkEQf9c5Mq50Tqud6286NNAoiKfpBEzZZVrbB2A9bkk49FlY2we25cK12a6858tcWWvM/dAxlr34mV/KlKha1Jxv9kr7oir8k4CqhX7aAzZs8UyrWLKqsJLH2wNWdYlKQ57CNcrFGqC5he1Hi9xfouN8X6kx+MIn4/cPkz5cyGMA+AZjBs11d84fLC24/oWIv3bXmB95gSJ+Fy8J63Piywulw++3ZXhRg87xqCb8xeoK6gXuRHz1k+rovYp0L9addd1IXZGmD4Bne9vHD4UuSYsEkO2xAOXhZIUG43WoAbPWpkKeiWAiNftMw5/lD44cRPIIgCbYVz7rmOvdS47072st7/M5nvHHypxHkotdmV3K3LlvNlameARpNmZQJYV7eHWC/qQETSKxDlspCXHs6u86TwMQ3ukBBwfrqolJSGm/njP4apQYm3NVuLrtCJM+TehTloT+oD1BGsv+9kYqvtQGvae+MfAF2OYwD1EJFNVS6zz4zH7Ql7CsJVPx8x5NliG4qPFhzOQBWB7IkxZg442GhkzQKlrQlmme9l0wfa2oDeawZGDNmzXhHpIGxqUNaFOK+ggEyXMsDWE0wPhjdvcSK5W0+ubRjpkufMmBtexyqoUUKRhNLTJO3j1DrMb1faV0738A0XzHHbbgi8fHF8SkrvXQpkAAxG0TGne29+MItv43dRG+6iabSAX9m/wcjyqbNx5iNvH9q8/VxaiDUHLmqVgCIhILGa/OkC4jCdhJ1jWvOBW4ArM/KFDU31aiRfWYgIAORjq/WCMW7VOVQ+LyPuYZA7jMA/ZcIzB7MTsdmysC+wtco3/qKn+I6HENfEdpzt/vtU3CA8Uzhj/beQLku3hirzoNkFQE0oPFIN9wREu05wnHTXPnCrzmn7+tN5ASh6asNo5c/lVqM4DEkHHCoz1eLyPO915X4Ht3Rj0qY2u7H2tlQlwsay8Vc3G0qLdbNrbmFyY2gwq/Dk9OzJlyBn1x2u+PsDQHh3q+Vw1Hi+f72jMTm+pjkEYgvHrIcyDR+BOwXpYi40lwO8wEaxk4EtMSPhazKr9jjBt+kiGPjcr2/pcaX36tuT6Juo+92rBiVxjyXLndaIhEADK9Cx3bmx4CRAJPSIBCGLdW6kNURbyvirim7TWKvx3U3+CBLCZi2dMeNebUJWG8GPgDUxKKUAGgN5bC59mPZI3pLUywS5WYbiLD3lx1lzkySsDR5HUlMgT9Ri7jYcuycTut6L+1oad3JM9sP74o63f893RkLnlWqRjEH5pfVYCS1so+zaGo7YPuANYHpRqyIGJwkDj+7oQs099jIjE0TBB9xmIb0I8yhrlfATM4xa9CgWlPjPNZqywtpeUR4Ffh5Pxot3DlYH0stbbmp2PTJCv1MjEeIl9cJNrbIuTUZT+ekoFhoI0P8udG+uRlBxRmQZ6DdDD42UmQfOi5soE/CPtlBd4STlM8xPAsazQzEUGpDbMS5uKZN02pm9A/c37jwJCr06J9eeWfBnyHh+2U17QXN38ISIjMaRFgJdVtdmb50UklYYECneram6Iav1pmHsk+hdYUa5iwAlchHlrHwM+tMq3i8g3VhvTMCNdOWYr7wlBpnv5DWKia14bthtUvL1UmQfcnTEzb2npjJxVIQWVczDpiwJwkbvAAWoSWoh+2Fw9HFq3qRYTjImhdiQNo20ABrnzbwJJQ7xFRTNyFpw7d33M0d3fX2dDB9Zhf3GTa9wWAIuGtAhY5HTnHQa5XZBxkptrP+dgX1tLZQJcLKtiixICeFQbRbTSIiwW/sfovvxsVN/642M1Hh5fVsp/Xtww9/hk+0EWhTaQJa1JWSoi44DXMDPRGoyb1BKk+X1v5PKIiBBIlkwMrkPDP/5BTOKItUHRMt8oMsv6XOxboDzeGOhe2VfQZ8yRzil0jV9bNCP7b2IeEpuo/PXMJxaHWthE4Bb/dQUf9kn19Zj9+l5stmZv6tromrQTpADAi846d+76mOA6gx7JH64wV9HHvCoXAnw6/ZxaQR9UuM+BN2S4WxAfmW+nTpvmaY1MYzav8B4aMblZIywt3MOtF/ap39vRJSn0CHKXH70EwKvKjEVFXDOsR71sVZ2XmYtLCOl5S1iXo4uIBGcU8bF5+2MmvWCMY6pfup7mohgT9UoC7hGR9VZyBh9N5T7ger/6oQxkgVXvAut4ZVD5CszipG8fQUT3SmGw050XfM3hL8CV8wcwu0UzSZlnXcvmRGrrDduD/IcNHSXQva465nlCJ7lL8BKzMsu9dFqha1LxuXPXx1TuOfATVXnO0mxO8YPZjdZtIkFs3jvUK58Dg47t/m7FQHf+zza5skv7uAvi46Vmgii/x4S1DzkcPNMgKH9Bdaai9w+aubysOLP8JV8UKtO9bKxg87nUC1sr08hAKpKSFiYdriijBVkTzSiyjdlXmMXptJTAESTeYeP+SzK5amjgGt+zBZtJP7094/yIi88VfMPmELsKgbKKpKRwO+q6E5jEOhQKMe5Ra3hctSJyNzAX4/6UWPyrWMzCpVplCRhDCUUb+RgTg/fNU4IN5H3AiwmcVGFSEkXC+SDNJlwK/FFBM4qTHzCyKHDTp67J9dSFUteEskHu/LsVXgauds7MW1w8I+e1oKbWgA73Yi9yuvN3AR1BEq0+Fh1OTv5Nc3XyoeihnCKnO/964HlgtB1KnO78vQnQDq1fU6oEpnz5QHZ9ICRVYx7fQ81YMZlnXsgsTnnK6c7bCXK6YPONgLkx7XC3VqaRgey46/zKzJl5D1upRZuNJV/u5pYLepPepT2d28cR77BTVeehfaydW0b1YVjvhhHbq8rctVvZWV7JE1c0TPBzN+zk5Q+2hWxfRR8OkeS6iBAhRQtHMGsmu4DVqhrJnz9Cg78f0oVT1RdFZAfwAIZm0huzD+U94PequlZExmBGALuIxFvpenzyKiJ/wkzQqzCcLv/2y0Xkz5i0phtUNeRbAvQjkMih2DBwzso7Q5BRwGpEVhbPmPCP4DpFruxXnO78EcAAVa4a8rv8dzb+KvtofQWRt73Cb2xevQ+4EHCAfqbC8yWZh1/RadkB6whetExgNWgj2oo/il3Zbwx87P019ro6F2YdxYkZNTYLsrTOYX9i0wMXB0QwV7nG1p07d/3EY3u++3eU6UA/kAEKO0HX2GBpkSvnhbbINJm0IdJFBWPKmV154oosNnxbzq3z1lNZ6+HSrDSenHomecV7Se/Sno6JsTz8P0VkpCUxfVTf+khWfsle7s79Ak8off7Fkzb8EOB055cCAxG5s3jGhD+CyZsG0MI0sc2C5ObaAVr6P89y58a2dJ4aSabJtD8t6cguws0X9uHVdduotXJePTVtCBOdxqtYuHE389fv4Gej+zK6fwMx84PNB7jjjc9DUduBtqf9iaLtCGUg/woIy8UyD6TMbkljHlXmrtlCnMPGlWd1ZVS/zgz3c61+NOQMLh7YJcA4lhTu4fYIxgEyO2ocUZwsRCQrlrDufpDFLWmwR6dEXrvxPB69LIvJZ6Yx/W+fcaTaUHsEs8p+zErIMO+f3/Lrd75oRFpsgCw2OkQRxclBRANRl8tbS921GEpFs/Cr8ekMTDUExhWl+ykqO8SbnzZswR2V3plPtn3P75Z/xaylpXjDEykKa6m79kT4t1G0HGISfu9VvMearHwKoVm/MGUyvDte9+XpjYR5Nw7j7J4dUEwYt6bOS2VtHSkJsVTVeqiu87Doiz0croq0BiaLa6m7tpmZ3aOI4oSh2T/B5vsBnUi/EQLgujSTq8/tEXDuF/M/Z2XpvjASjXpqzQ/oRBHFCUGLf6Mw050/2QZPhgsBt4u1M/vKwVzQrzMKvLpuG8+v3kKdN/LzLlDqhXuiE/Iofkg4YT/imRwfg6JUVDX5Uxat/hHPKKI40fh//TPQUURxotEmA/FHljs31krqlmXD283KPuIjX+0StMza7FRop7ygNazcKKL4v8ZxM5AoojgV0Zbf/4siilMeUQOJIooI+F9/H1ToiWN+2gAAAABJRU5ErkJggg=="
+         id="image2" />
+    </pattern>
+  </defs>
+  <rect
+     x="-271"
+     y="-830"
+     width="840"
+     height="560"
+     fill="#ffffff"
+     id="rect7"
+     style="stroke-width:0.95814" />
+  <polygon
+     id="s192608760"
+     points="-240.00179,-300 -240.00179,-800 539.9982,-800 539.9982,-300 "
+     fill="none"
+     stroke-width="2"
+     stroke="#000000"
+     stroke-dasharray="7, 7">
+    <g
+       id="t192608760">
+      <text
+         xml:space="preserve"
+         x="149.99821"
+         y="-544.5039"
+         font-family="Sans,Helvetica"
+         fill="rgb(0,0,0)"
+         font-size="14"
+         id="text9" />
+    </g>
+  </polygon>
+  <g
+     id="g17">
+    <polygon
+       id="s156643025"
+       points="-80,-480.00012 -79.99989,-540 39.99997,-540 40.000015,-480.0002 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t156643025">
+      <text
+         xml:space="preserve"
+         x="-36.499992"
+         y="-504.50397"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text14">order</text>
+    </g>
+  </g>
+  <g
+     id="g25">
+    <polygon
+       id="s43765046"
+       points="160.00002,-479.9999 160.00002,-540 280.00006,-540 280,-479.99985 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t43765046">
+      <text
+         xml:space="preserve"
+         x="180.00003"
+         y="-513.79388"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text20">transcription</text>
+      <text
+         xml:space="preserve"
+         x="168.50003"
+         y="-495.21381"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text22">adapter (sphinx)</text>
+    </g>
+  </g>
+  <g
+     id="g31">
+    <polygon
+       id="s123846052"
+       points="400,-479.99982 400,-540 519.9998,-540 519.99994,-479.99982 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t123846052">
+      <text
+         xml:space="preserve"
+         x="431.49997"
+         y="-504.50378"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text28">publisher</text>
+    </g>
+  </g>
+  <g
+     id="g37">
+    <polygon
+       id="s222160653"
+       points="20.000006,-420 20,-440 119.99995,-440 119.99999,-420.00034 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t222160653">
+      <text
+         xml:space="preserve"
+         x="41"
+         y="-424.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text34">uploaded</text>
+    </g>
+  </g>
+  <g
+     id="g43">
+    <polygon
+       id="s13600450"
+       points="260,-420 260,-440 359.99988,-440 359.99994,-420 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t13600450">
+      <text
+         xml:space="preserve"
+         x="274.49997"
+         y="-424.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text40">transcribed</text>
+    </g>
+  </g>
+  <g
+     id="g259501267">
+    <path
+       id="s181342224"
+       d="m -80,-370 c 8,-13.33 72,-13.33 80,0 v 40 c -8,13.33 -72,13.33 -80,0 z"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s225371913"
+       d="m -80,-370 c 8,13.33 72,13.33 80,0"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t259501267">
+      <text
+         xml:space="preserve"
+         x="-40"
+         y="-344.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text47" />
+    </g>
+  </g>
+  <g
+     id="g210980110">
+    <path
+       id="s50742063"
+       d="m 160,-370 c 8,-13.33 72,-13.33 80,0 v 40 c -8,13.33 -72,13.33 -80,0 z"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s125639996"
+       d="m 160,-370 c 8,13.33 72,13.33 80,0"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t210980110">
+      <text
+         xml:space="preserve"
+         x="200"
+         y="-344.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text53" />
+    </g>
+  </g>
+  <g
+     id="g61">
+    <polygon
+       id="s17734976"
+       points="180,-600 180,-660 260,-660 259.9999,-600.0001 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t17734976">
+      <text
+         xml:space="preserve"
+         x="198"
+         y="-624.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text58">wav s3</text>
+    </g>
+  </g>
+  <g
+     id="g67">
+    <polygon
+       id="s111322233"
+       points="180,-720 180,-780 260.00003,-780 259.99997,-720.0001 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t111322233">
+      <text
+         xml:space="preserve"
+         x="202.50002"
+         y="-744.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text64">srt s3</text>
+    </g>
+  </g>
+  <g
+     id="g73">
+    <polygon
+       id="s267589054"
+       points="-60,-720 -60,-780 20.00003,-780 19.99997,-720.0001 "
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t267589054">
+      <text
+         xml:space="preserve"
+         x="-29.499985"
+         y="-744.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text70">gw</text>
+    </g>
+  </g>
+  <g
+     id="g169104927">
+    <ellipse
+       id="s132140396"
+       cx="-180.00017"
+       cy="-662"
+       rx="19.999937"
+       ry="17.999956"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s262147893"
+       d="M -180.00017,-643.99963 -180.00002,-602"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s63360970"
+       d="m -220,-632.0002 h 79.99992"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s254948667"
+       d="M -180.00002,-602 -220,-560.00006"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s188404824"
+       d="M -180.00002,-602 -140,-560"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t169104927">
+      <text
+         xml:space="preserve"
+         x="-180"
+         y="-545.21387"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text80" />
+    </g>
+  </g>
+  <g
+     id="la40509078">
+    <path
+       id="s40509078"
+       d="M 7.6293945e-6,-480.00018 V -430 H 20"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s176482839"
+       d="M 10.821894,-422.26938 20,-430 l -9.178105,-7.73062"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t40509078">
+      <text
+         xml:space="preserve"
+         x="-3.9999931"
+         y="-426.21396"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text86" />
+    </g>
+  </g>
+  <g
+     id="la246734340">
+    <path
+       id="s246734340"
+       d="M 120.00005,-430 H 140 v -79.99994 h 20.00002"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s163573741"
+       d="m 150.82191,-502.26932 9.17811,-7.73062 -9.17811,-7.73056"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t246734340">
+      <text
+         xml:space="preserve"
+         x="144"
+         y="-464.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text92" />
+    </g>
+  </g>
+  <g
+     id="la2199074">
+    <path
+       id="s2199074"
+       d="M 240,-479.99988 V -430 h 20"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s132386995"
+       d="M 250.8219,-422.26938 260,-430 l -9.1781,-7.73062"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t2199074">
+      <text
+         xml:space="preserve"
+         x="236"
+         y="-426.21381"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text98" />
+    </g>
+  </g>
+  <g
+     id="la111400560">
+    <path
+       id="s111400560"
+       d="M 359.9999,-430 H 380 v -79.9999 h 20"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s163093993"
+       d="m 390.8219,-502.2693 9.1781,-7.7306 -9.1781,-7.7306"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t111400560">
+      <text
+         xml:space="preserve"
+         x="384"
+         y="-464.50381"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text104" />
+    </g>
+  </g>
+  <g
+     id="la250505838">
+    <path
+       id="s250505838"
+       d="M -39.999992,-480.00015 -39.999996,-380"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s251987215"
+       d="m -47.730606,-389.1781 7.73061,9.1781 7.730614,-9.1781"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t250505838">
+      <text
+         xml:space="preserve"
+         x="-35.999992"
+         y="-424.50397"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text110" />
+    </g>
+  </g>
+  <g
+     id="la88598940">
+    <path
+       id="s88598940"
+       d="M 200,-479.99988 V -380"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s57946021"
+       d="M 192.2694,-389.1781 200,-380 l 7.7306,-9.1781"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t88598940">
+      <text
+         xml:space="preserve"
+         x="204"
+         y="-424.50385"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text116" />
+    </g>
+  </g>
+  <path
+     id="s60220203"
+     d="M 170.8219,-622.2694 180,-630 l -9.1781,-7.7306"
+     fill="none"
+     stroke-width="2"
+     stroke="#000000" />
+  <g
+     id="g4002">
+    <path
+       id="s228245370"
+       d="M 40.000015,-510.00006 H 97.7 V -630 H 180"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000"
+       sodipodi:nodetypes="cccc" />
+    <g
+       id="t228245370"
+       transform="translate(86.712662,-32.129996)">
+      <text
+         xml:space="preserve"
+         x="50"
+         y="-607.79401"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text122">PUT</text>
+    </g>
+  </g>
+  <path
+     id="s144515361"
+     d="m 289.17813,-517.7305 -9.1781,7.73056 9.1781,7.73062"
+     fill="none"
+     stroke-width="2"
+     stroke="#000000" />
+  <g
+     id="g3978">
+    <path
+       id="s246940552"
+       d="m 439.9999,-540 v -40 H 340 v 70.00006 h -59.99997"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t246940552"
+       transform="translate(-20.015407,67.947041)">
+      <text
+         xml:space="preserve"
+         x="314.99994"
+         y="-587.79395"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text128">GET</text>
+    </g>
+  </g>
+  <path
+     id="s186550023"
+     d="m 269.1781,-757.73065 -9.1781,7.73059 9.1781,7.73056"
+     fill="none"
+     stroke-width="2"
+     stroke="#000000" />
+  <g
+     id="g3969">
+    <path
+       id="s193288518"
+       d="M 479.9999,-540 V -750.00006 H 260"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t193288518"
+       transform="translate(-201.30029)">
+      <text
+         xml:space="preserve"
+         x="479"
+         y="-757.79401"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text134">PUT</text>
+    </g>
+  </g>
+  <g
+     id="la260952116">
+    <path
+       id="s260952116"
+       d="m -140,-660 h 119.999985 v -60.00006"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s17411677"
+       d="m -12.269403,-710.82196 -7.730612,-9.1781 -7.730612,9.1781"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t260952116">
+      <text
+         xml:space="preserve"
+         x="-45.999977"
+         y="-641.21387"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text140">GET</text>
+    </g>
+  </g>
+  <g
+     id="la221103058">
+    <path
+       id="s221103058"
+       d="m -140,-600 h 120.000038 v 60"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <path
+       id="s76713123"
+       d="m -27.730574,-549.1781 7.730612,9.1781 7.730612,-9.1781"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t221103058">
+      <text
+         xml:space="preserve"
+         x="-45.999985"
+         y="-607.79395"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text146">POST</text>
+    </g>
+  </g>
+  <path
+     id="s28824409"
+     d="M 170.82188,-742.2694 180,-750 l -9.1781,-7.7306"
+     fill="none"
+     stroke-width="2"
+     stroke="#000000" />
+  <g
+     id="g3944">
+    <path
+       id="s38910880"
+       d="M 20,-750.00006 180,-750"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t38910880"
+       transform="translate(47.600242)">
+      <text
+         xml:space="preserve"
+         x="87"
+         y="-757.79401"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text152">GET</text>
+    </g>
+  </g>
+  <path
+     id="s230117375"
+     d="m 227.73058,-590.82196 -7.73063,-9.1781 -7.7306,9.1781"
+     fill="none"
+     stroke-width="2"
+     stroke="#000000" />
+  <g
+     id="g3987">
+    <path
+       id="s226511646"
+       d="m 220.00003,-540 -8e-5,-60.00006"
+       fill="none"
+       stroke-width="2"
+       stroke="#000000" />
+    <g
+       id="t226511646"
+       transform="translate(0,-10.800336)">
+      <text
+         xml:space="preserve"
+         x="223.99998"
+         y="-564.50391"
+         font-family="Sans, Helvetica"
+         fill="#000000"
+         font-size="14px"
+         id="text158">GET</text>
+    </g>
+  </g>
+</svg>

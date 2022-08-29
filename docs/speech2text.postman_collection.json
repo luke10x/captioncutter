@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "7b69617f-47ba-46c8-9bcb-6d782de62243",
+		"name": "speech2text",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request application.properties",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/luke/workspace/captioncutter/speech2text/src/main/resources/application.properties"
+						},
+						{
+							"key": "fileName",
+							"value": "test22.wav",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/luke/workspace/captioncutter/speech2text/src/main/resources/application.properties"
+						},
+						{
+							"key": "fileName",
+							"value": "test22.wav",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

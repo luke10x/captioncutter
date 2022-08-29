@@ -7,6 +7,7 @@
   <packaging>pom</packaging>
  
   <modules>
+    <module>order</module>
     <module>speech2text</module>
   </modules>
 </project>

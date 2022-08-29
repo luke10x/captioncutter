@@ -1,0 +1,61 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Caption API
+  license:
+    name: MIT
+servers:
+  - url: http://cloudopener.swagger.io/v1
+paths:
+  /order:
+    post:
+      summary: create new order to transcribe a wav file
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: string
+              format: binary
+      responses:
+        201:
+          description: Transcription order was created!
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Order"
+        default:
+          description: Error creating order!
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+  schemas:
+    Order:
+      required:
+        - orderId
+        - status
+      properties:
+        orderId:
+          $ref: '#/components/schemas/Uuid'
+        status:
+          type: string
+          maxLength: 36
+    Uuid:
+      type: string
+      pattern: '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'
+      # the regex above limits the length;
+      # however, some tools might require explicit settings:
+      minLength: 36
+      maxLength: 36
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

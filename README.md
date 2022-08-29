@@ -1,6 +1,10 @@
 # CaptionCutter generate subtitles from wav files
 
-Generates subtitle from Microsoft Wav files`
+Generates subtitle from Microsoft Wav files
+
+Microservice architecture using AWS
+
+![Diagram](./docs/audio-transcription-service.svg)
 
 ## Set up development environment
 
@@ -24,3 +28,7 @@ And then run the speech2text with:
 Web resources used while building this app:
 
 https://cmusphinx.github.io/wiki/tutorialsphinx4/
+
+May be useful:
+
+https://wiki.audacityteam.org/wiki/Movie_subtitles_(*.SRT)#tool
