@@ -1,4 +1,4 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.aws.configuration.credentials;
+package dev.luke10x.captioncutter.transcriptionapi.order.aws.v1.configuration.credentials;
 
 import com.amazonaws.auth.*;
 

@@ -1,4 +1,4 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.service;
+package dev.luke10x.captioncutter.transcriptionapi.order.aws.v1;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;

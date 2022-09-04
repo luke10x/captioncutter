@@ -1,4 +1,4 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.aws.exception;
+package dev.luke10x.captioncutter.transcriptionapi.order.aws.v1.exception;
 
 import java.util.Optional;
 
