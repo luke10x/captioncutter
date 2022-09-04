@@ -1,8 +1,7 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.aws.v2.configurartion;
+package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v2.configurartion;
 
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
@@ -22,7 +21,7 @@ import java.net.URI;
 import java.time.Duration;
 
 @Configuration
-public class AwsS3AsyncClientConfig {
+public class AsyncS3Config {
 
     @Value("${cloud.aws.endpoint}")
     private String endpoint;

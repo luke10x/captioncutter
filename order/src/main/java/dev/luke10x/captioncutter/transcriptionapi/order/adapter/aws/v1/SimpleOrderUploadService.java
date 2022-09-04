@@ -1,4 +1,4 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.aws.v1;
+package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v1;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
@@ -7,19 +7,34 @@ import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.PutObjectResult;
 import dev.luke10x.captioncutter.transcriptionapi.order.openapi.model.Order;
+import dev.luke10x.captioncutter.transcriptionapi.order.service.OrderUploadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.buffer.DataBuffer;
+import org.springframework.core.io.buffer.DataBufferUtils;
 import org.springframework.stereotype.Component;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.io.InputStream;
 
-@Component
+@Component("SyncApiV1")
 @Slf4j
-public class AWSV1SyncFileUploader {
+public class SimpleOrderUploadService implements OrderUploadService {
     @Autowired
     AmazonS3 amazonS3;
 
-    public Order putToStorage(String bucketName, String fileKey, InputStream inputStream, Integer length) {
+    @Override
+    public Mono<Order> createOrder(Flux<DataBuffer> content, long length, String bucketName, String fileName) {
+        return DataBufferUtils.join(content)
+                .map(DataBuffer::asInputStream)
+                .map(inputStream -> {
+                    log.info("Now we will write to s3 this IS");
+                    return putToStorage(bucketName, fileName, inputStream, (int) length);
+                });
+    }
+
+    private Order putToStorage(String bucketName, String fileKey, InputStream inputStream, Integer length) {
         try {
             ObjectMetadata metadata = new ObjectMetadata();
             metadata.setContentLength(length);
