@@ -9,5 +9,6 @@
   <modules>
     <module>order</module>
     <module>speech2text</module>
+    <module>shared</module>
   </modules>
 </project>

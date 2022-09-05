@@ -3,6 +3,7 @@ package dev.luke10x.captioncutter.transcriptionapi.order.delegate;
 import dev.luke10x.captioncutter.transcriptionapi.order.openapi.api.OrderApiDelegate;
 import dev.luke10x.captioncutter.transcriptionapi.order.openapi.model.Order;
 import dev.luke10x.captioncutter.transcriptionapi.order.service.OrderUploadService;
+import dev.luke10x.captioncutter.transcriptionapi.shared.Greeter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -28,6 +29,10 @@ public class OrderApiDelegateImpl implements OrderApiDelegate
     private String bucketName;
 
     public Mono<ResponseEntity<Order>> orderPost(ServerWebExchange exchange) {
+
+
+        var g = new Greeter();
+        g.sayHi();
 
         var headers = exchange.getRequest().getHeaders();
         int length = (int) headers.getContentLength();
