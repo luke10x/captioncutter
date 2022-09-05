@@ -1,4 +1,4 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v1;
+package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
@@ -10,6 +10,7 @@ import dev.luke10x.captioncutter.transcriptionapi.order.openapi.model.Order;
 import dev.luke10x.captioncutter.transcriptionapi.order.service.OrderUploadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.DataBufferUtils;
 import org.springframework.stereotype.Component;
@@ -18,7 +19,8 @@ import reactor.core.publisher.Mono;
 
 import java.io.InputStream;
 
-@Component("SyncApiV1")
+//@Primary
+@Component
 @Slf4j
 public class SimpleOrderUploadService implements OrderUploadService {
     @Autowired

@@ -1,4 +1,4 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v1.configuration;
+package dev.luke10x.captioncutter.transcriptionapi.shared.aws.v1.configuration;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -6,9 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class EndpointConfig {
-    @Value("${cloud.aws.endpoint}")
+    @Value("${module.aws.endpoint}")
     private String endpoint;
-    @Value("${cloud.aws.region.static}")
+
+    @Value("${module.aws.region}")
     private String region;
 
     @Bean

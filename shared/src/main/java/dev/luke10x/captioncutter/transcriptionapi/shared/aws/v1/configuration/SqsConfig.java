@@ -1,9 +1,11 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v1.configuration;
+package dev.luke10x.captioncutter.transcriptionapi.shared.aws.v1.configuration;
 
-import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.amazonaws.services.sqs.AmazonSQSAsyncClientBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.aws.messaging.config.QueueMessageHandlerFactory;
 import org.springframework.cloud.aws.messaging.support.NotificationMessageArgumentResolver;
 import org.springframework.context.annotation.Bean;
@@ -16,13 +18,16 @@ import java.util.List;
 
 @Configuration
 public class SqsConfig {
+    @Autowired
+    AWSCredentialsProvider applicationAWSCredentialsProvider;
+
     @Bean
     @Primary
     public AmazonSQSAsync amazonSQSAsync(final AwsClientBuilder.EndpointConfiguration endpointConfiguration) {
         return AmazonSQSAsyncClientBuilder
                 .standard()
                 .withEndpointConfiguration(endpointConfiguration)
-                .withCredentials(new DefaultAWSCredentialsProviderChain())
+                .withCredentials(applicationAWSCredentialsProvider)
                 .build();
     }
 

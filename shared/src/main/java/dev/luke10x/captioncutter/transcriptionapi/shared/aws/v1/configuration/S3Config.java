@@ -1,17 +1,18 @@
-package dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v1.configuration;
+package dev.luke10x.captioncutter.transcriptionapi.shared.aws.v1.configuration;
 
+import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import dev.luke10x.captioncutter.transcriptionapi.order.adapter.aws.v1.configuration.credentials.ApplicationAWSCredentialsProviderChain;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class S3Config {
-    @Value("${cloud.aws.region.static}")
-    private String region;
+    @Autowired
+    AWSCredentialsProvider applicationAWSCredentialsProvider;
 
     @Bean
     public AmazonS3 amazonS3(final AwsClientBuilder.EndpointConfiguration endpointConfiguration) {
@@ -19,7 +20,7 @@ public class S3Config {
         AmazonS3 amazonS3Client = AmazonS3ClientBuilder
                 .standard()
                 .withEndpointConfiguration(endpointConfiguration)
-                .withCredentials(ApplicationAWSCredentialsProviderChain.getInstance())
+                .withCredentials(applicationAWSCredentialsProvider)
                 .withPathStyleAccessEnabled(true)
                 .build();
 

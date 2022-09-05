@@ -71,7 +71,7 @@
 			<artifactId>spring-cloud-aws-context</artifactId>
 		</dependency>
 
-		<!-- AWS V1 APIS-->
+		<!-- AWS V2 APIS-->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>s3</artifactId>

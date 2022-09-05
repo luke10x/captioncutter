@@ -21,8 +21,6 @@ import java.util.UUID;
 public class OrderApiDelegateImpl implements OrderApiDelegate
 {
     @Autowired
-    @Qualifier("AsyncApiV2")
-//    @Qualifier("SyncApiV1")
     OrderUploadService orderUploadService;
 
     @Value("${application.bucket.name}")
