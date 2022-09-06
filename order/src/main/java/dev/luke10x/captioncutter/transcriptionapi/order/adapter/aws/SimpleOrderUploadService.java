@@ -10,30 +10,37 @@ import dev.luke10x.captioncutter.transcriptionapi.order.openapi.model.Order;
 import dev.luke10x.captioncutter.transcriptionapi.order.service.OrderUploadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.buffer.DataBuffer;
-import org.springframework.core.io.buffer.DataBufferUtils;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.io.InputStream;
 
+import static org.springframework.core.io.buffer.DataBufferUtils.*;
+
 //@Primary
 @Component
 @Slf4j
 public class SimpleOrderUploadService implements OrderUploadService {
+
+    @Value("${application.bucket.name}")
+    private String bucketName;
+
     @Autowired
     AmazonS3 amazonS3;
 
     @Override
-    public Mono<Order> createOrder(Flux<DataBuffer> content, long length, String bucketName, String fileName) {
-        return DataBufferUtils.join(content)
+    public Mono<Order> createOrder(Flux<DataBuffer> content, long length, String fileName) {
+        return join(content)
                 .map(DataBuffer::asInputStream)
-                .map(inputStream -> {
-                    log.info("Now we will write to s3 this IS");
-                    return putToStorage(bucketName, fileName, inputStream, (int) length);
-                });
+                .map(inputStream -> putToStorage(
+                        bucketName,
+                        fileName,
+                        inputStream,
+                        (int) length));
     }
 
     private Order putToStorage(String bucketName, String fileKey, InputStream inputStream, Integer length) {
@@ -50,11 +57,11 @@ public class SimpleOrderUploadService implements OrderUploadService {
             log.info("Object was put in a bucket");
 
             var lastModified = putResult.getMetadata().getLastModified().toString();
-            Order o = new Order();
-            o.setOrderId(fileKey);
-            o.setStatus("Last modified at: " + lastModified);
 
-            return o;
+            return (new Order())
+                    .orderId(fileKey)
+                    .status("Last modified at: " + lastModified);
+
         } catch (AmazonServiceException serviceException) {
             log.info("AmazonServiceException: "+ serviceException.getMessage());
             throw serviceException;

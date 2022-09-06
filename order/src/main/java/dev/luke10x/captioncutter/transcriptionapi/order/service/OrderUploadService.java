@@ -7,6 +7,6 @@ import reactor.core.publisher.Mono;
 
 public interface OrderUploadService {
     Mono<Order> createOrder(
-            Flux<DataBuffer> content, long length, String bucketName, String fileName
+            Flux<DataBuffer> content, long length, String fileName
     );
 }

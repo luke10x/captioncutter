@@ -23,12 +23,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Order"
-        default:
-          description: Error creating order!
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Error"
+        400:
+          description: Bad parameters for create order request
 
 components:
   schemas:
@@ -49,13 +45,3 @@ components:
       # however, some tools might require explicit settings:
       minLength: 36
       maxLength: 36
-    Error:
-      required:
-        - code
-        - message
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
