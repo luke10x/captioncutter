@@ -5,7 +5,6 @@ import dev.luke10x.captioncutter.transcriptionapi.order.openapi.model.Order;
 import dev.luke10x.captioncutter.transcriptionapi.order.service.OrderUploadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

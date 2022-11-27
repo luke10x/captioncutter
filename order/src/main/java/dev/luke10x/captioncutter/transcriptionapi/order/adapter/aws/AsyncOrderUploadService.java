@@ -7,12 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.buffer.DataBuffer;
-import org.springframework.core.io.buffer.DataBufferUtils;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import software.amazon.awssdk.services.s3.S3AsyncClient;
+import software.amazon.awssdk.services.s3.model.CreateBucketRequest;
+import software.amazon.awssdk.services.s3.model.CreateBucketResponse;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 import software.amazon.awssdk.services.s3.model.PutObjectResponse;
 
@@ -39,7 +40,12 @@ public class AsyncOrderUploadService implements OrderUploadService {
                 .map(DataBuffer::asByteBuffer);
         MediaType mediaType = MediaType.APPLICATION_OCTET_STREAM;
 
-        CompletableFuture<PutObjectResponse> future = s3AsyncClient
+        CompletableFuture<CreateBucketResponse> createBucketFuture = s3AsyncClient.createBucket(
+                CreateBucketRequest.builder()
+                        .bucket(bucketName)
+                        .build());
+
+        CompletableFuture<PutObjectResponse> putObjectFuture = s3AsyncClient
                 .putObject(PutObjectRequest.builder()
                                 .bucket(bucketName)
                                 .contentLength(length)
@@ -48,9 +54,12 @@ public class AsyncOrderUploadService implements OrderUploadService {
                                 .build(),
                         fromPublisher(byteBuffers));
 
+        CompletableFuture<PutObjectResponse> future = createBucketFuture
+                .thenCombine(putObjectFuture, (cbr, por) -> por);
+
         return Mono.fromFuture(future).map(putResponse -> {
             String responseAsStr = putResponse.toString();
-            log.info("🍄v2");
+            log.info("🍄v2.1");
 
             return (new Order())
                     .orderId(fileName)
